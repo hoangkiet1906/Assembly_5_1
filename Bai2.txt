@@ -1,0 +1,29 @@
+.model small
+.stack 100h
+.data   
+.code
+main proc  
+    --Cong
+    mov al,4
+    mov bl,5
+    add al,bl
+    --Tru
+    mov al,9
+    mov bl,5
+    sub al,bl
+    --Nhan
+    mov al,200
+    mov bl,4
+    mul al
+    --chia
+    mov ax,20
+    mov bx,6
+    div bl 
+    div bx  
+main endp
+end main
+
+
+
+
+                         

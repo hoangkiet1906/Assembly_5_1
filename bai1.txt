@@ -1,0 +1,38 @@
+Bai1 Nhap,xuat 1kytu
+.model small
+.stack 100h
+.data
+.code
+main proc  
+	--nhap 1 kytu 
+	mov ah,1
+	int 21h  
+	--xuat 1 kytu
+	mov ah,2
+	mov dl,35h 
+	int 21h  
+main endp
+end main
+
+
+Bai2 Hello world
+.model small
+.stack 100h
+.data   
+nhan db "Hello world$"
+.code
+main proc  
+    --xuat 1 dong kytu
+    mov ax,@data     
+    mov ds,ax
+    mov ah,9
+    lea dx,nhan
+    int 21h   
+    
+main endp
+end main
+
+
+
+
+                         
